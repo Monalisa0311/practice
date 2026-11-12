@@ -33,11 +33,11 @@ jobs:
           pip install pytest
       - name: Run pytest
         run: |
-        pytest -v tests/ \
-        --junitxml=test-results.xml \
-        --log-file=pytest.log \
-        --log-file-level=DEBUG \
-        2>&1 > output.log
+          pytest -v tests/ \
+          --junitxml=test-results.xml \
+          --log-file=pytest.log \
+          --log-file-level=DEBUG \
+          2>&1 > output.log
       - name: Upload test reports
         uses: actions/upload-artifact@v4
         if: always()
@@ -47,4 +47,4 @@ jobs:
           pytest.log
           output.log
           test-results.xml
-          if-no-files-found: warn
+        if-no-files-found: warn
