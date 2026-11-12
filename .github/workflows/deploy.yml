@@ -19,7 +19,6 @@ jobs:
   Running-pytest:
     runs-on: ubuntu-latest
     steps:
-      steps: 
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Set up python
@@ -48,3 +47,4 @@ jobs:
           pytest.log
           output.log
           test-results.xml
+          if-no-files-found: warn
