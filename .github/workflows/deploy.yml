@@ -2,7 +2,7 @@ name: Practice-workflow
 on: push
 
 jobs:
-  Set-up:
+  Code-checkout:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout code
@@ -13,3 +13,5 @@ jobs:
           python-version: '3.12'
       - name: Check python version
         run: python --version
+      - name: Run python file
+        run: python abc.py
