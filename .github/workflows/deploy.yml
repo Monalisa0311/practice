@@ -33,7 +33,7 @@ jobs:
           pip install pytest
       - name: Run pytest
         run: |
-          pytest -v tests/ \
+          pytest -v \
           --junitxml=test-results.xml \
           --log-file=pytest.log \
           --log-file-level=DEBUG \
