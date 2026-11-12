@@ -10,5 +10,5 @@ import pytest
     ((0, 0, 0), 0)
     ])
 
-def test_one(*numbers,sum):
+def test_one(numbers,sum):
     assert add(*numbers)==sum

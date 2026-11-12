@@ -1,2 +1,2 @@
 def add(a,b,*args):
-    return sum(*args)
+    return a+b+sum(args)
