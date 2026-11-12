@@ -1,0 +1,8 @@
+name: Practice-workflow
+on: push
+
+jobs:
+  Pratice-job1
+  steps: 
+    - name: Checkout code
+      uses: actions/Checkout@v4
