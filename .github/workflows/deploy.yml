@@ -2,8 +2,8 @@ name: Practice-workflow
 on: push
 
 jobs:
-  Pratice-job1
-  runs-on:ubuntu-latest
+  Pratice-job1:
+  runs-on: ubuntu-latest
   steps: 
     - name: Checkout code
-      uses: actions/Checkout@v4
+      uses: actions/checkout@v4
